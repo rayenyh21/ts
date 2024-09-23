@@ -1,0 +1,17 @@
+Explanation:
+Props Interface (GreetingProps):
+
+This interface defines the shape of the props expected by the Greeting component.
+name is a required prop of type string.
+State Interface (CounterState):
+
+This interface defines the shape of the state for the Counter component.
+count is a state variable of type number.
+FC Type Annotation (FC<GreetingProps>):
+
+FC stands for FunctionComponent, which is a type provided by React to define functional components.
+It ensures the component receives props matching the GreetingProps interface.
+Component Class with Generics (Component<{}, CounterState>):
+
+The Component class is annotated with two generic types. The first is for props (which are empty here, represented by {}), and the second is for state (CounterState).
+This ensures the state is strongly typed, allowing the TypeScript compiler to check for type errors.
